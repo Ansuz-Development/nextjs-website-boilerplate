@@ -1,0 +1,10 @@
+node_modules/
+out/
+
+.git/
+.webpack/
+
+postcss.config.js
+
+webpack.main.config.js
+webpack.renderer.config.js
