@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import "../styles/tailwind.css";
+import "../styles/tailwind.scss";
 
 const MyApp = ({Component, pageProps}) => (
   <Layout>
