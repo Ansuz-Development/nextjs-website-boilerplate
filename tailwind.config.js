@@ -1,59 +1,32 @@
-const plugin = require("tailwindcss/plugin");
-const colors = require("tailwindcss/colors");
-
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/*.js",
-  ],
+  content: ["./pages/**/*.js", "./components/**/*.js"],
   theme: {
-    colors: {
-      ...colors,
+    container: {
+      center: true,
     },
+    colors: {
+      primary: {
+        30: "#123D934D",
+        50: "#123D9380",
+        80: "#123D93CC",
+        100: "#123D93",
+      },
+      secondary: {
+        30: "#9B27B04D",
+        50: "#9B27B080",
+        80: "#9B27B0CC",
+        100: "#9B27B0",
+      },
+      text: {
+        30: "#2626264D",
+        50: "#26262680",
+        80: "#262626CC",
+        100: "#262626",
+      },
+      surface: "#F8F8F8",
+      white: "#FFFFFF",
+    },
+    extend: {},
   },
-  plugins: [
-    plugin(function ({addComponents, theme}) {
-      const screens = theme("screens", {});
-      addComponents([
-        {
-          ".container": {width: "100%"},
-        },
-        {
-          [`@media (min-width: ${screens.sm})`]: {
-            ".container": {
-              "max-width": "40rem",
-            },
-          },
-        },
-        {
-          [`@media (min-width: ${screens.md})`]: {
-            ".container": {
-              "max-width": "48rem",
-            },
-          },
-        },
-        {
-          [`@media (min-width: ${screens.lg})`]: {
-            ".container": {
-              "max-width": "64rem",
-            },
-          },
-        },
-        {
-          [`@media (min-width: ${screens.xl})`]: {
-            ".container": {
-              "max-width": "80rem",
-            },
-          },
-        },
-        {
-          [`@media (min-width: ${screens["2xl"]})`]: {
-            ".container": {
-              "max-width": "80rem",
-            },
-          },
-        },
-      ]);
-    }),
-  ],
+  plugins: [],
 };

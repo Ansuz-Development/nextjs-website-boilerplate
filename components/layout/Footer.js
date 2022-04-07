@@ -12,13 +12,9 @@ const Footer = () => (
     <div>
       <p className="text-4xl text-white font-bold">Sẵn sàng tham gia dự án?</p>
       <p className="text-white mt-5 mb-10">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
       </p>
-      <button
-        type="button"
-        className="button bg-white py-2.5 px-12 rounded-lg font-bold"
-      >
+      <button type="button" className="button bg-white py-2.5 px-12 rounded-lg font-bold">
         Đăng ký
       </button>
     </div>

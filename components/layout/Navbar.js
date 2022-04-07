@@ -1,13 +1,6 @@
 import React from "react";
 
-const list = [
-  "Home",
-  "Về dự án",
-  "Nội dung đào tạo",
-  "Mentor",
-  "Tin tức - Sự kiện",
-  "Contact",
-];
+const list = ["Home", "Về dự án", "Nội dung đào tạo", "Mentor", "Tin tức - Sự kiện", "Contact"];
 
 const Navbar = () => (
   <nav
@@ -19,7 +12,7 @@ const Navbar = () => (
     <div className="bg-gray-100 h-full hidden md:block">
       <div className="container mx-auto h-full flex-1">
         <ul className="flex flex-row items-center justify-evenly h-full">
-          {list.map(e => (
+          {list.map((e) => (
             <li key={e}>
               <a href="#" className="block text-gray-700  hover:text-blue-700">
                 {e}

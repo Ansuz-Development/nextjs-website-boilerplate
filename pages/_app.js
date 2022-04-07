@@ -1,10 +1,13 @@
-import Layout from "../components/Layout";
-import "../styles/tailwind.scss";
+import Layout from "../components/layout/Layout";
 
-const MyApp = ({Component, pageProps}) => (
-  <Layout>
-    <Component {...pageProps} />
-  </Layout>
-);
+import "../styles/index.scss";
+
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
+};
 
 export default MyApp;
